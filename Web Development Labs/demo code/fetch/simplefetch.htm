@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Fetch Example</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 2rem; }
+    form { display: grid; gap: .75rem; max-width: 420px; }
+    label { display: grid; gap: .25rem; }
+    input { padding: .5rem .6rem; border: 1px solid #ccc; border-radius: 6px; }
+    button { padding: .55rem .9rem; border: 1px solid #0d6efd; background:#0d6efd; color:#fff; border-radius:6px; cursor:pointer; }
+    button:disabled { opacity:.6; cursor:not-allowed; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:8px; overflow:auto; }
+    .row { display:flex; gap:.5rem; align-items:center; }
+    .status { font-size:.9rem; color:#475569; }
+    .error { color:#b91c1c; }
+  </style>
+</head>
+<body>
+  <h1>Modern JavaScript Fetch (async/await)</h1>
+  <p> <code>fetch()</code> API, async/await, timeouts, and robust error handling.</p>
+
+  <form id="login-form">
+    <label> User Name <input id="name" name="name" autocomplete="username"  /> </label>
+    <label> Password <input id="pwd" name="pwd" type="password" autocomplete="current-password"  /> </label>
+    <div class="row">
+      <button id="submitBtn" type="submit">Fetch</button>
+      <span class="status" id="status"></span>
+    </div>
+  </form>
+
+  <h2>Response</h2>
+  <div id="output">The fetched data will go here.</div>
+
+  <script type="module" src="simplefetch.js"></script>
+</body>
+</html>
