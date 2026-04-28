@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CabsOnline</title>
+        <link ref="stylesheet" href="style.css">
+        <script src="booking.js" defer></script>
+    </head>
+<body>
+    <h1> CabsOnline Taxi Booking </h1>
+
+    <form id="bookingform">
+        
+        <label>Customer Name:</label>
+        <input type="text" name="cname" id="cname">
+        <br><br>
+
+        <label>Phone Number:</label>
+        <input type="text" name="phone" id="phone">
+        <br><br>
+
+        <label>Unit Number:</label>
+        <input type="text" name="unumber" id="unumber">
+        <br><br>
+
+        <label>Street Number:</label>
+        <input type="text" name="snumber" id="snumber">
+        <br><br>
+
+        <label>Street Name:</label>
+        <input type="text" name="stname" id="stname">
+        <br><br>
+
+        <label>Suburb:</label>
+        <input type="text" name="sbname" id="sbname">
+        <br><br>
+
+        <label>Destination Suburb:</label>
+        <input type="text" name="dsbname" id="dsbname">
+        <br><br>
+
+        <label>Pick-Up Date:</label>
+        <input type="text" name="date" id="date" placeholder="dd/mm/yyyy">
+        <br><br>
+
+        <label>Pick-Up Time:</label>
+        <input type="text" name="time" id="time">
+        <br><br>
+
+        <input type="button" value="Book Taxi" onclick="submitBooking()">
+    </form>
+
+    <div>
+        <p id="reference"></p>
+    </div>
+</body>
+</html>
