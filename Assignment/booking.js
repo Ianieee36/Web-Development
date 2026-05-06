@@ -6,7 +6,7 @@ window.onload = function () {
     let day = String(now.getDate()).padStart(2, '0');
     let month = String(now.getMonth() + 1).padStart(2, '0');
     let year = now.getFullYear();
-    document.getElementById("date").value = '${hours}:${minutes}';
+    document.getElementById("date").value = 'dd/mm/yyyy';
 };
 
 function submitBooking() {
