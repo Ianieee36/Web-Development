@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Email Database</title>
+    </head>
+
+    <body>
+
+        <h1>Email Records</h1>
+
+        <div id="output"></div>
+
+        <script>
+
+            //Define class
+            class EmailRecord {
+                
+                constructor(name, email) {
+                    this.name = name;
+                    this.email = email;
+                }
+
+                printRecord() {
+                    return this.name + " | " + this.email; 
+                }
+            }
+
+            // instantiate two objects
+            let person1 = new EmailRecord("Christian Cantos", "chriscantos@hotmail.com");
+            let person2 = new EmailRecord("Jeline Pinlac", "pinlacjeline@hotmail.com");
+            
+            // instantiate json object
+            let jsonObject = {
+                "name": "Sarah",
+                "email": "sarah@gmail.com"
+            };
+
+            let output = "";
+
+            output += person1.printRecord() + "<br>";
+            output += person2.printRecord() + "<br><br>";
+
+            output += "Does jsonObject belong to EmailRecord class? <br>";
+            output += (jsonObject instanceof EmailRecord);
+
+            document.getElementById("output").innerHTML = output;
+
+
+        </script>
+    </body>
+</html>
