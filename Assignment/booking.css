@@ -1,0 +1,227 @@
+
+
+
+/* Applies styles to all HTML elements */
+* {
+    
+    /* Includes padding and border inside element width */
+    box-sizing: border-box;
+
+    /* Sets default website font */
+    font-family: 'Verdana', sans-serif;
+}
+
+/* BODY / PAGE BACKGROUND */
+body {
+
+    /* Removes default browser spacing */
+    margin: 0;
+
+    /* Rounded corners around webpage*/
+    border-radius: 12px;
+
+    /* Dark background color */
+    background: #131a20;
+
+    /* Default text color */
+    color: #222;
+}
+
+h1 {
+
+    /* White header background */
+    background: #ffffff;
+
+    /* Header text color */
+    color: #000000;
+
+    /* Uses Flexbox to align logo and title side-by-side */
+    display: flex;
+
+    /* Vertically centers logo and text */
+    align-items: center;
+
+    /* Adds spacing between logo and text */
+    gap: 10px;
+
+    /* Space inside the header */
+    padding: 20px;
+
+    /* Removes top margin and adds bottom spacing */
+    margin: 0 0 30px 0;
+
+    /* Header font size */
+    font-size: 20px;
+}
+
+h1 img {
+
+    /* Logo width */
+    width: 40px;
+
+    /* Logo height */
+    height: 30px;
+
+    /* Rounded corners on logo */
+    border-radius: 10px;
+
+    /* Prevents image stretching */
+    object-fit: contain;
+}
+
+form {
+
+    /* Maximum form width */
+    max-width: 600px;
+
+    /* Centers form horizontally */
+    margin: 0 auto;
+
+    /* White form background */
+    background: white;
+
+    /* Space inside form */
+    padding: 30px;
+
+    /* Rounded corners */
+    border-radius: 12px;
+
+    /* Light shadow around form */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.164);
+}
+
+label {
+
+    /* Makes labels appear on separate lines */
+    display: block;
+
+    /* Bold text */
+    font-weight: bold;
+
+    /* Label font size */
+    font-size: 13px;
+
+    /* Space below labels */
+    margin-bottom: 6px;
+}
+
+input[type="text"] {
+
+    /* Input fills entire width */
+    width: 100%;
+
+    /* Space inside input field */
+    padding: 12px;
+
+    /* Light grey border */
+    border: 1px solid #ccc;
+
+    /* Rounded input corners */
+    border-radius: 8px;
+
+    /* Input text size */
+    font-size: 15px;
+}
+
+input[type="text"]:focus {
+
+    /* Removes default browser outline */
+    outline: none;
+
+    /* Yellow border when active */
+    border-color: #facc15;
+
+    /* Yellow glowing effect */
+    box-shadow: 0 0 4px rgba(250, 204, 21, 0.8);
+}
+
+input[type="button"] {
+
+    /* Button fills entire width */
+    width: 100%;
+
+    /* Yellow button background */
+    background: #facc15;
+
+    /* Button text color */
+    color: #111827;
+
+    /* Removes default border */
+    border: none;
+
+    /* Space inside button */
+    padding: 14px;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* Button text size */
+    font-size: 13px;
+
+    /* Bold button text */
+    font-weight: bold;
+
+    /* Changes mouse cursor to pointer */
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+
+    /* Keeps yellow color when hovering */
+    background: #facc15;
+}
+
+#reference {
+
+     /* Same width as form */
+    max-width: 600px;
+
+    /* Centers confirmation box */
+    margin: 20px auto;
+}
+
+.confirmation-box {
+
+    /* White background */
+    background: white;
+
+    /* Space inside confirmation box */
+    padding: 20px;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Yellow left border for styling */
+    border-left: 6px solid #facc15;
+
+    /* Soft shadow effect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    /* Text color */
+    color: #111827;
+}
+
+.confirmation-box h2 {
+
+    /* Removes default top margin */
+    margin-top: 0;
+
+    /* Green success color */
+    color: #166534;
+
+}
+
+.confirmation-box p {
+
+    /* Space between paragraphs */
+    margin: 10px 0;
+}
+
+.error {
+
+    /* Red error text */
+    color: red;
+
+    /* Bold text */
+    font-weight: bold;
+}
