@@ -1,0 +1,25 @@
+========================================================
+File : mysqlcommand.txt
+Student : Christian Danielle B. Cantos || 23188023
+Description : my schema for my database to 
+create table for bookings where booking request are stored.
+========================================================
+
+
+CREATE TABLE bookings ( 
+    booking_id int(11) NOT NULL AUTO_INCREMENT, 
+    booking_ref varchar(8) DEFAULT NULL, 
+    cname varchar(100) NOT NULL, 
+    phone varchar(12) NOT NULL, 
+    unumber varchar(20) DEFAULT NULL, 
+    snumber varchar(20) NOT NULL, 
+    tname varchar(100) NOT NULL, 
+    sbname varchar(100) DEFAULT NULL, 
+    dsbname varchar(100) DEFAULT NULL, 
+    pickup_date date NOT NULL, 
+    pickup_time time NOT NULL, 
+    booking_datetime datetime NOT NULL, 
+    status varchar(20) NOT NULL DEFAULT 'unassigned', 
+    PRIMARY KEY (booking_id), 
+    UNIQUE KEY booking_ref (booking_ref) 
+)

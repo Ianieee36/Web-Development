@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * File: booking.php
+ * Student: Christian Danielle B. Cantos || 23188023
+ * Description: Data handler which stores the booking in Database
+ * and returns JSON confirmation to the client.
+ */
+
+
+
 // used for debugging problems in the booking system.
 error_reporting(E_ALL);
 ini_set('display_errors', 1);

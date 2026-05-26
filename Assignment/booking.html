@@ -1,57 +1,99 @@
 <!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>CabsOnline</title>
-        <link rel="stylesheet" href="booking.css">
-        <script src="booking.js" defer></script>
-    </head>
-<body>
-    <h1><img src="Logo.PNG">CabsOnline</h1>
 
+<!--
+File: booking.html
+Student: Christian Danielle B. Cantos || 23188023
+Description: Booking form page where input is submmited to booking.js
+
+
+
+<!-- Declares HTML5 document type -->
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Title shown in browser tab -->
+    <title>CabsOnline</title>
+
+    <!-- Links external CSS stylesheet -->
+    <link rel="stylesheet" href="booking.css">
+
+    <!-- Links external JavaScript file -->
+    <!-- defer ensures JavaScript loads after HTML -->
+    <script src="booking.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Main website heading with company logo -->
+    <h1>
+        <img src="Logo.PNG">
+        CabsOnline
+    </h1>
+
+    <!-- Booking form -->
     <form id="bookingform">
-        
+
+        <!-- Customer full name -->
         <label>Customer Name:</label>
         <input type="text" name="cname" id="cname">
         <br><br>
 
+        <!-- Customer phone number -->
         <label>Phone Number:</label>
         <input type="text" name="phone" id="phone">
         <br><br>
 
+        <!-- Optional unit/apartment number -->
         <label>Unit Number:</label>
         <input type="text" name="unumber" id="unumber">
         <br><br>
 
+        <!-- Street number -->
         <label>Street Number:</label>
         <input type="text" name="snumber" id="snumber">
         <br><br>
 
+        <!-- Street name -->
         <label>Street Name:</label>
         <input type="text" name="stname" id="stname">
         <br><br>
 
+        <!-- Pickup suburb -->
         <label>Suburb:</label>
         <input type="text" name="sbname" id="sbname">
         <br><br>
 
+        <!-- Destination suburb -->
         <label>Destination Suburb:</label>
         <input type="text" name="dsbname" id="dsbname">
         <br><br>
 
+        <!-- Pickup date input -->
+        <!-- Format: dd/mm/yyyy -->
         <label>Pick-Up Date:</label>
         <input type="text" name="date" id="date" placeholder="dd/mm/yyyy">
         <br><br>
 
+        <!-- Pickup time input -->
         <label>Pick-Up Time:</label>
         <input type="text" name="time" id="time">
         <br><br>
 
+        <!-- Button triggers JavaScript booking function -->
         <input type="button" value="Book Taxi" onclick="submitBooking()">
+
     </form>
 
+    <!-- Displays booking confirmation message -->
+    <!-- Booking reference number appears here -->
     <div>
         <div id="reference"></div>
     </div>
+
 </body>
 </html>

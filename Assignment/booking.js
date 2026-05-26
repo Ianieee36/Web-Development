@@ -1,3 +1,9 @@
+/**
+ * File: booking.js
+ * Student: Christian Danielle B. Cantos || 23188023
+ * Description: Booking client side where submitted data
+ * is being validated and submit to the server via fetch.
+*/
 
 window.onload = function () {
     

@@ -1,0 +1,340 @@
+/**
+ * File: admin.css
+ * Student : Christian Danielle B. Cantos || 23188023
+ * Description: Stylesheet for admin page
+ */
+
+
+
+
+/* Applies styles to all HTML elements */
+* {
+
+    /* Includes padding and border inside element width */
+    box-sizing: border-box;
+
+    /* Sets default website font */
+    font-family: 'Verdana', sans-serif;
+}
+
+/* BODY / PAGE BACKGROUND */
+body {
+
+    /* Removes default browser spacing */
+    margin: 0;
+
+    /* Dark page background color */
+    background: #131a20;
+
+    /* Default text color */
+    color: #222;
+}
+
+/* MAIN HEADER */
+h1 {
+
+    /* White header background */
+    background: #ffffff;
+
+    /* Header text color */
+    color: #000000;
+
+    /* Uses Flexbox to align logo and title */
+    display: flex;
+
+    /* Vertically centers items */
+    align-items: center;
+
+    /* Space between logo and title */
+    gap: 10px;
+
+    /* Space inside header */
+    padding: 20px;
+
+    /* Removes top margin and adds bottom spacing */
+    margin: 0 0 30px 0;
+
+    /* Header font size */
+    font-size: 20px;
+}
+
+/* LOGO IMAGE */
+h1 img {
+
+    /* Logo width */
+    width: 40px;
+
+    /* Logo height */
+    height: 30px;
+
+    /* Rounded logo corners */
+    border-radius: 10px;
+
+    /* Prevents image distortion */
+    object-fit: contain;
+}
+
+/* ADMIN SEARCH CONTAINER */
+.admin-search {
+
+    /* Maximum width of search section */
+    max-width: 600px;
+
+    /* Centers container horizontally */
+    margin: 0 auto 20px auto;
+
+    /* White background */
+    background: white;
+
+    /* Space inside container */
+    padding: 30px;
+
+    /* Rounded corners */
+    border-radius: 12px;
+
+    /* Soft shadow effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.164);
+}
+
+/* LABEL STYLING */
+label {
+
+    /* Displays labels on separate lines */
+    display: block;
+
+    /* Bold text */
+    font-weight: bold;
+
+    /* Label font size */
+    font-size: 13px;
+
+    /* Space below labels */
+    margin-bottom: 6px;
+}
+
+/* TEXT INPUT FIELDS */
+input[type="text"] {
+
+    /* Input fills available width */
+    width: 100%;
+
+    /* Space inside input */
+    padding: 12px;
+
+    /* Light grey border */
+    border: 1px solid #ccc;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* Input text size */
+    font-size: 15px;
+
+    /* Space below input */
+    margin-bottom: 15px;
+}
+
+/* INPUT FIELD WHEN SELECTED */
+input[type="text"]:focus {
+
+    /* Removes default browser outline */
+    outline: none;
+
+    /* Yellow border color */
+    border-color: #facc15;
+
+    /* Yellow glow effect */
+    box-shadow: 0 0 4px rgba(250, 204, 21, 0.8);
+}
+
+/* SEARCH BUTTON AND ASSIGN BUTTON */
+input[type="button"],
+button {
+
+    /* Yellow background */
+    background: #facc15;
+
+    /* Text color */
+    color: #111827;
+
+    /* Removes default border */
+    border: none;
+
+    /* Space inside button */
+    padding: 12px 14px;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* Font size */
+    font-size: 13px;
+
+    /* Bold button text */
+    font-weight: bold;
+
+    /* Mouse pointer on hover */
+    cursor: pointer;
+}
+
+/* SEARCH BUTTON WIDTH */
+input[type="button"] {
+
+    /* Button fills available width */
+    width: 100%;
+}
+
+/* BUTTON HOVER EFFECT */
+input[type="button"]:hover,
+button:hover {
+
+    /* Keeps yellow background on hover */
+    background: #facc15;
+}
+
+/* MESSAGE AREA */
+#message {
+
+    /* Maximum width */
+    max-width: 900px;
+
+    /* Centers message box */
+    margin: 20px auto;
+
+    /* White background */
+    background: white;
+
+    /* Space inside message box */
+    padding: 15px;
+
+    /* Yellow left border */
+    border-left: 6px solid #facc15;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Bold text */
+    font-weight: bold;
+
+    /* Text color */
+    color: #111827;
+}
+
+/* BOOKING TABLE CONTAINER */
+.content {
+
+    /* Maximum width */
+    max-width: 1100px;
+
+    /* Centers container */
+    margin: 20px auto;
+
+    /* White background */
+    background: white;
+
+    /* Space inside container */
+    padding: 20px;
+
+    /* Rounded corners */
+    border-radius: 12px;
+
+    /* Shadow effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.164);
+
+    /* Enables horizontal scrolling on smaller screens */
+    overflow-x: auto;
+}
+
+/* TABLE STYLING */
+table {
+
+    /* Table fills container width */
+    width: 100%;
+
+    /* Removes double borders */
+    border-collapse: collapse;
+
+    /* Table font size */
+    font-size: 13px;
+}
+
+/* TABLE HEADER */
+th {
+
+    /* Yellow header background */
+    background: #facc15;
+
+    /* Header text color */
+    color: #111827;
+
+    /* Space inside table headers */
+    padding: 12px;
+
+    /* Aligns text to left */
+    text-align: left;
+}
+
+/* TABLE CELLS */
+td {
+
+    /* Space inside table cells */
+    padding: 12px;
+
+    /* Bottom border */
+    border-bottom: 1px solid #ddd;
+}
+
+/* TABLE ROW HOVER EFFECT */
+tr:hover {
+
+    /* Light grey background on hover */
+    background: #f9fafb;
+}
+
+/* ERROR MESSAGE */
+.error {
+
+    /* Red text color */
+    color: red;
+
+    /* Bold text */
+    font-weight: bold;
+}
+
+/* SUCCESS CONFIRMATION BOX */
+.confirmation-box {
+
+    /* White background */
+    background: white;
+
+    /* Space inside box */
+    padding: 20px;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Yellow left border */
+    border-left: 6px solid #facc15;
+
+    /* Shadow effect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    /* Text color */
+    color: #111827;
+}
+
+/* SUCCESS BOX TITLE */
+.confirmation-box h2 {
+
+    /* Removes default top margin */
+    margin-top: 0;
+
+    /* Green success text color */
+    color: #166534;
+}
+
+/* SUCCESS MESSAGE PARAGRAPH */
+.confirmation-box p {
+
+    /* Space between paragraphs */
+    margin: 10px 0;
+}
