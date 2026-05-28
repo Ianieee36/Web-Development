@@ -1,0 +1,89 @@
+#about {
+  background: #f3f4f6;
+  padding: 40px 60px;
+}
+
+.about-section {
+  background: #111827;
+  border-radius: 24px;
+  padding: 70px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-left h2 {
+  font-size: 48px;
+  line-height: 1;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+.about-left h2 span {
+  color: #facc15;
+}
+
+.about-left p {
+  color: #d1d5db;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+}
+
+.about-stats {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat strong {
+  font-size: 32px;
+  color: #facc15;
+  font-weight: bold;
+}
+
+.stat span {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-card {
+  background: #1f2937;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.about-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.about-card h3 {
+  margin: 0 0 6px 0;
+  color: white;
+  font-size: 16px;
+}
+
+.about-card p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 14px;
+  line-height: 1.6;
+}

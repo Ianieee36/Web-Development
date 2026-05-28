@@ -52,13 +52,13 @@ if ($action === "search") {
         mysqli_stmt_bind_param($stmt, "s", $bsearch);
     } 
     
-    // If search box is empty, show all unassigned bookings
+    // If search box is empty, show unassigned bookings within 2 hours from current time
     else {
         $sql = "SELECT booking_ref, cname, phone, sbname, dsbname, pickup_date, pickup_time, status
                 FROM bookings
-                WHERE status = 'unassigned'";
+                WHERE status = 'unassigned'
+                AND TIMESTAMP(pickup_date, pickup_time) BETWEEN NOW() AND DATE_ADD(NOW(), INTERVAL 2 HOUR)";
 
-        // Prepares SQL statement
         $stmt = mysqli_prepare($conn, $sql);
     }
 
